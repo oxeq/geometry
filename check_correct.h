@@ -3,9 +3,9 @@
 #define L 300
 
 typedef struct circle {
-	double x;
-	double y;
-	double rad;
+    double x;
+    double y;
+    double rad;
 } Circle;
 
 int check_correct();
