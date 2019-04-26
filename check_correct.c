@@ -20,7 +20,7 @@ int check_correct(char* figure, Circle* c)
 
     for (j = 0; figure[i] != ' '; i++, j++) {
         if ((figure[i] < '0' || figure[i] > '9' || figure[i] == ' ')
-            && figure[i] != '.') {
+            && figure[i] != '.' && figure[i] != '-') {
             printf("Incorrect coordinates\n");
             exit(1);
         }
@@ -33,7 +33,7 @@ int check_correct(char* figure, Circle* c)
 
     for (j = 0; figure[i] != ','; i++, j++) {
         if ((figure[i] < '0' || figure[i] > '9' || figure[i] == ' ')
-            && figure[i] != '.') {
+            && figure[i] != '.' && figure [i] != '-') {
             printf("Incorrect coordinates\n");
             exit(1);
         }
@@ -44,7 +44,7 @@ int check_correct(char* figure, Circle* c)
 
     for (j = 0; figure[i] != ')'; i++, j++) {
         if ((figure[i] < '0' || figure[i] > '9' || figure[i] == ' ')
-            && figure[i] != '.') {
+            && figure[i] != '.' && figure[i] != '-') {
             printf("Incorrect coordinates\n");
             exit(1);
         }
