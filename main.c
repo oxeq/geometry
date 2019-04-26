@@ -13,7 +13,7 @@ int main()
         return 1;
     }
 
-    Circle* c = (Circle*)malloc(sizeof(*c));
+    Circle* c  = (Circle*)malloc(sizeof(*c));
 
     while (!feof(data)) {
         fgets(figure, 300, data);
@@ -24,5 +24,6 @@ int main()
         printf("circle(%.2f %.2f, %.2f)\n", c->x, c->y, c->rad);
     }
     fclose(data);
+    free(c);
     return 0;
 }
