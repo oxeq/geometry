@@ -1,2 +1,2 @@
 all:
-	gcc -Wall -o main.o main.c check_correct.c check_correct.h
+	gcc ./src/*.c -Wall -o ./bin/main
