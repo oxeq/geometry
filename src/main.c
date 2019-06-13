@@ -13,7 +13,7 @@ int main()
         return 1;
     }
 
-    Circle* c  = (Circle*)malloc(sizeof(*c));
+    Circle* c = (Circle*)malloc(sizeof(*c));
 
     while (!feof(data)) {
         fgets(figure, 300, data);
